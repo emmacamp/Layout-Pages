@@ -1,0 +1,166 @@
+:root {
+    --shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    --videoShadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    position: absolute;
+}
+
+header {
+    width: 100%;
+    box-shadow: var(--shadow);
+    position: fixed;
+    background-color: #f3f3f3;
+    opacity: .95;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+
+}
+
+.btn:hover {
+    background: #f1f1f1;
+}
+
+.btn-user {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+
+nav .center,
+.left,
+.right {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.center {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+.btn-search {
+    cursor: pointer;
+    border: 1px solid #929292;
+    padding: 5px;
+    height: 100%;
+    padding: 5px 20px;
+    border-left: none;
+
+}
+
+.input-search {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #929292;
+    background-color: #fff;
+    padding: 5px;
+    border-right: none;
+}
+
+.input-search:focus {
+    outline: none;
+}
+
+.input-voice {
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .right {
+    width: 120px;
+    justify-content: space-between;
+}
+
+nav .left {
+    width: 120px;
+    justify-content: space-between;
+}
+
+nav .right img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+/* Main */
+
+main {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    /* box-shadow: var(--shadow); */
+    padding: 10px;
+
+
+}
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* height: 100px; */
+}
+
+main .container .cuadricula {
+    background-color: #929292;
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    box-shadow: var(--videoShadow);
+}
+
+main .container .cuadricula .video {
+
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .cuadricula .description {
+    background-color: #f1f1f1;
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+}

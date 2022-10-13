@@ -1,0 +1,151 @@
+:root {
+    --shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --border-radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+
+}
+
+header {
+    box-shadow: var(--shadow);
+    width: 100%;
+
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    width: 80%;
+    min-width: 500px;
+    margin: auto;
+
+}
+
+header nav ul li {
+    margin-right: 10px;
+}
+
+.container {
+    margin: 10px;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.follow {
+    color: #0095f6;
+}
+
+.follow:hover {
+    cursor: pointer;
+}
+
+.central-main-content .sidebar {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .central-main-content {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .central-main-content .sidebar {
+        display: block;
+        flex-direction: column;
+        width: 220px;
+        height: 600px;
+        box-shadow: var(--shadow);
+        margin: 10px;
+        border-radius: var(--border-radius);
+
+
+    }
+
+
+
+    .central-main-content .sidebar .sidebar-content-card {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .central-main-content .sidebar .sidebar-content-card img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 10px;
+    }
+}
+
+.container .history-section {
+    box-shadow: var(--shadow);
+    max-width: 500px;
+    overflow-x: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    border-radius: var(--border-radius);
+
+}
+
+.container .history-section .history {
+    width: 60px;
+    height: 50px;
+    margin: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+}
+
+.container .history-section .history img {
+    border-radius: 20px;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}
+
+.container .post {
+    max-width: 500px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+}
+
+
+
+.container .post section .post-section .post-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container .post section .post-section .post-description .reactions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
